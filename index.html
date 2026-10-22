@@ -3,54 +3,162 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dhruv Kapri</title>
-<meta name="description" content="Dhruv Kapri: architect turned applied-AI engineer working on spatial and geospatial AI.">
+<title>Dhruv Kapri | GeoAI and applied AI for the built environment</title>
+<meta name="description" content="Dhruv Kapri: architect turned applied-AI engineer. GeoAI, LiDAR and spatial analysis, constraint-based design generation, and LLMs for AEC documents.">
+<meta property="og:title" content="Dhruv Kapri">
+<meta property="og:description" content="Architect turned applied-AI engineer: GeoAI, spatial analysis and machine learning for the built environment.">
+<meta property="og:url" content="https://dhruv-kapri.github.io/">
+<meta property="og:type" content="profile">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f766e'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='white'>DK</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Dhruv Kapri</h1>
-<p class="tag">Architect turned applied-AI engineer: geospatial AI, spatial analysis and machine learning for the built environment.</p>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Architect &middot; Applied-AI engineer</p>
+    <h1>Dhruv Kapri</h1>
+    <p class="lede">I build machine-learning and spatial-analysis tools for the built environment: city-scale geospatial pipelines, constraint-solved floor plans, and language models that read construction documents.</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a class="btn primary" href="cv.pdf">CV (PDF)</a>
+      <a class="btn" href="mailto:dhruv27kapri@gmail.com">Email</a>
+      <a class="btn" href="https://github.com/Dhruv-Kapri">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/dhruv-kapri">LinkedIn</a>
+    </nav>
+  </div>
 </header>
-<main>
-<section>
-<h2>About</h2>
-<p>I hold a Bachelor of Architecture from the Indian Institute of Technology, Kharagpur (2021-2026). I work at the boundary of architecture and machine learning, and I am currently a Product Engineer at SLnko Energy, where I build floorplan automation and document-intelligence tools in Python. Earlier research took me to OCAD University (Mitacs Globalink), Universiti Malaya and the National University of Singapore.</p>
-</section>
-<section>
-<h2>Research interests</h2>
-<ul>
-<li>Spatial and geospatial AI</li>
-<li>Constraint-based design generation</li>
-<li>Large language models for architecture, engineering and construction (AEC) documents</li>
-</ul>
-</section>
-<section>
-<h2>Selected projects</h2>
-<ul>
-<li><a href="https://dhruv-kapri.github.io/Rooftop-Solar-Potential/">GIS-Driven Rooftop Solar Potential, Washington DC</a> (<a href="https://github.com/Dhruv-Kapri/Rooftop-Solar-Potential">code</a>). City-scale Python pipeline (LiDAR surface model, GRASS r.sun radiation, RANSAC roof planes, PVWatts yield) scoring 100,064 DC rooftops, with a public MapLibre and PMTiles web map. Specific yield on a Glover Park benchmark was about 1% off Esri's tutorial (1162 vs 1150).</li>
-<li><a href="https://github.com/Dhruv-Kapri/rhodes-wildfire-analysis">Rhodes wildfire analysis</a>. Learning project applying raster and vector analysis in Python to the 2023 Rhodes (Greece) wildfire, using Sentinel-2 imagery, a digital elevation model and OpenStreetMap layers.</li>
-<li><a href="https://github.com/Dhruv-Kapri/Distributed-Job-Queue">Distributed job queue</a>. A job queue built from scratch in Python, exploring workers, retries, dead-letter queues, concurrency and fault-tolerant task processing.</li>
-</ul>
-<p>More on <a href="https://github.com/Dhruv-Kapri">GitHub</a>.</p>
-</section>
-<section>
-<h2>Publications</h2>
-<ul>
-<li>Integrating AI-Driven Personas and Procedural Visualization for Complete Communities Design and Urban Planning for Large-Scale Urban Development, HCII 2025, Springer Nature Switzerland.</li>
-<li>A New Contrastive Learning-based Vision Transformer for Sentiment Analysis using Scene Text Images, International Journal of Pattern Recognition and Artificial Intelligence (IJPRAI 2024).</li>
-</ul>
-</section>
-<section>
-<h2>CV</h2>
-<p><a href="cv.pdf">Curriculum vitae (PDF)</a></p>
-</section>
-<section>
-<h2>Contact</h2>
-<p>Email: <a href="mailto:dhruv27kapri@gmail.com">dhruv27kapri@gmail.com</a><br>
-<a href="https://github.com/Dhruv-Kapri">GitHub</a> | <a href="https://www.linkedin.com/in/dhruv-kapri">LinkedIn</a></p>
-</section>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I trained as an architect at the <strong>Indian Institute of Technology Kharagpur</strong> (B.Arch Hons., 2021&ndash;2026, CGPA 8.31/10) and moved into machine learning through research at <strong>Universiti Malaya</strong>, <strong>OCAD University</strong> (Mitacs Globalink) and the <strong>National University of Singapore</strong>. I now work as a product engineer at <strong>SLnko Energy</strong>, where I build floor-plan automation and document-intelligence tools in Python.</p>
+    <p>The thread through my work: take a messy spatial or regulatory problem from architecture and planning, and turn it into something a program can check, score or generate.</p>
+  </section>
+
+  <section id="interests">
+    <h2>Research interests</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3>Geospatial AI</h3>
+        <p>LiDAR and remote sensing, urban-scale spatial analysis, and the equity questions maps can answer.</p>
+      </div>
+      <div class="card">
+        <h3>Constraint-based design</h3>
+        <p>Generating building layouts where codes and bylaws are hard constraints, not after-the-fact checks.</p>
+      </div>
+      <div class="card">
+        <h3>LLMs for AEC documents</h3>
+        <p>Retrieval over long tenders and specifications, with answers traceable to the source clause.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+
+    <article class="project feature">
+      <div class="project-head">
+        <h3><a href="https://dhruv-kapri.github.io/Rooftop-Solar-Potential/">Rooftop solar potential, Washington DC</a></h3>
+        <span class="meta">SIH &times; ISRO &middot; open source</span>
+      </div>
+      <p>A city-scale Python pipeline that scores every rooftop in DC for solar: LiDAR surface model, GRASS <code>r.sun</code> radiation, RANSAC roof planes and PVWatts yield, aggregated to census tracts with an energy-burden equity lens and published as a MapLibre + PMTiles web map.</p>
+      <ul class="stats">
+        <li><b>100,064</b><span>rooftops scored</span></li>
+        <li><b>~1%</b><span>off Esri's Glover Park benchmark</span></li>
+        <li><b>165</b><span>tests</span></li>
+      </ul>
+      <p class="actions"><a href="https://dhruv-kapri.github.io/Rooftop-Solar-Potential/">Live map</a><a href="https://github.com/Dhruv-Kapri/Rooftop-Solar-Potential">Code</a></p>
+    </article>
+
+    <div class="grid two">
+      <article class="project">
+        <h3><a href="https://github.com/Dhruv-Kapri/rhodes-wildfire-analysis">Rhodes wildfire analysis</a></h3>
+        <p>Raster and vector analysis of the 2023 Rhodes (Greece) wildfire with Sentinel-2 imagery, a digital elevation model and OpenStreetMap layers.</p>
+        <p class="tags"><span>Sentinel-2</span><span>DEM</span><span>Python</span></p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Dhruv-Kapri/Distributed-Job-Queue">Distributed job queue</a></h3>
+        <p>A job queue built from scratch in Python: workers, retries, dead-letter queues, concurrency and fault-tolerant processing.</p>
+        <p class="tags"><span>Systems</span><span>Python</span></p>
+      </article>
+    </div>
+    <p class="more">More on <a href="https://github.com/Dhruv-Kapri">GitHub</a> &rarr;</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li>
+        <span class="venue">HCII 2025</span>
+        <p class="title">Integrating AI-Driven Personas and Procedural Visualization for Complete Communities Design and Urban Planning for Large-Scale Urban Development</p>
+        <p class="where">HCI International 2025, Springer Nature Switzerland</p>
+      </li>
+      <li>
+        <span class="venue">IJPRAI 2024</span>
+        <p class="title">A New Contrastive Learning-based Vision Transformer for Sentiment Analysis using Scene Text Images</p>
+        <p class="where">International Journal of Pattern Recognition and Artificial Intelligence</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="when">2026 &ndash; now</div>
+        <div class="what">
+          <h3>SLnko Energy <span>Graduate Trainee, Product Engineer</span></h3>
+          <p>Floor-plan automation engine (CP-SAT, bylaw-checked layouts), PostGIS zoning and seismic lookups for plot intake, and a retrieval-augmented tender-review tool that cut solar-EPC review from days to hours.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2025</div>
+        <div class="what">
+          <h3>Veritas Group <span>Digital Solutions Intern</span></h3>
+          <p>Analytics and ML-assisted dashboards; Python tools for Rhino + Grasshopper that cut design-iteration time by 40%.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2024 &ndash; 25</div>
+        <div class="what">
+          <h3>National University of Singapore <span>BIM Intern</span></h3>
+          <p>Structured BIM datasets from 50+ plans; Revit models with Dynamo-automated material take-offs.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2024</div>
+        <div class="what">
+          <h3>OCAD University <span>Mitacs Globalink Research Intern</span></h3>
+          <p>Geospatial pipelines and clustering for urban planning; a simulation framework of 112 LLM-based personas (HCII 2025).</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022 &ndash; 24</div>
+        <div class="what">
+          <h3>Universiti Malaya <span>Research Fellow</span></h3>
+          <p>Contrastive-learning Vision Transformer for scene-text sentiment: 98.58% accuracy, +5.8% over a CNN baseline (IJPRAI 2024).</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills">
+    <h2>Tools</h2>
+    <dl class="skills">
+      <dt>Spatial</dt><dd>ArcGIS Pro, GRASS GIS, PostGIS, LiDAR, GeoParquet, MapLibre</dd>
+      <dt>ML</dt><dd>PyTorch, TensorFlow, scikit-learn, Transformers, OpenCV</dd>
+      <dt>Code</dt><dd>Python, SQL, C++, TypeScript, FastAPI, Docker, GitHub Actions</dd>
+      <dt>Design</dt><dd>Rhino, Grasshopper, Ladybug, Revit</dd>
+    </dl>
+  </section>
+
 </main>
-<footer>New Delhi, India</footer>
+
+<footer class="wrap">
+  <p>Dhruv Kapri &middot; New Delhi, India &middot; <a href="mailto:dhruv27kapri@gmail.com">dhruv27kapri@gmail.com</a></p>
+</footer>
+
 </body>
 </html>
