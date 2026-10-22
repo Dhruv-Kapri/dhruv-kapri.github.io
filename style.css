@@ -177,3 +177,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
   opacity:var(--grain-opacity)}
 .nav{background:color-mix(in srgb,var(--bg) 82%,transparent)}
 @media print{.texture{display:none}}
+
+.acad{margin:1.4rem 0 0;font-size:.92rem}
+.acad a{color:var(--accent-2);font-weight:500;border-bottom:1px solid transparent}
+.acad a:hover{border-bottom-color:currentColor}
