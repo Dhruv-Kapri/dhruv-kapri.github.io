@@ -11,13 +11,13 @@
 <meta property="og:image" content="https://dhruv-kapri.github.io/assets/rooftop-map.jpg">
 <meta property="og:type" content="profile">
 <meta name="theme-color" content="#fbfaf8">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23123b39'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='white'>DK</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
 </head>
 <body>
 
@@ -31,6 +31,10 @@
       <a href="#research">Research</a>
       <a href="#contact">Contact</a>
       <a class="nav-cv" href="cv.pdf">CV</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light/dark">
+        <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>
+      </button>
     </div>
   </div>
 </nav>
@@ -182,6 +186,16 @@
 
 <script>
 document.getElementById('y').textContent = new Date().getFullYear();
+const tb = document.querySelector('.theme-toggle');
+const setLabel = () => tb.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+setLabel();
+tb.addEventListener('click', () => {
+  const dark = document.documentElement.dataset.theme !== 'dark';
+  if (dark) document.documentElement.dataset.theme = 'dark'; else delete document.documentElement.dataset.theme;
+  try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+  setLabel();
+});
+
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 setTimeout(() => document.querySelectorAll('.reveal:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('in'); }), 1200);
